@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A premium personal portfolio for a Software Engineer and AI Enthusiast." />
+  <meta name="theme-color" content="#070a12" />
+  <title>Varshini's Portfolio | Software Engineer & AI Enthusiast</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="ambient ambient-three" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#home" aria-label="Varshini.ai home">
+        <span class="brand-mark">VA</span>
+        <span class="brand-copy">
+          <strong>VARSHINI'S Portfolio</strong>
+          <small>Software/ AI Engineer</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#problem-solving">DSA</a>
+        <a class="nav-resume" href="assets/Varshini_Mithinti_Resume.pdf" download="Varshini_Mithinti_Resume.pdf" title="Updated Resume">
+          <span class="nav-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" aria-hidden="true">
+              <path d="M12 3v9m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M5 15.5v2A2.5 2.5 0 0 0 7.5 20h9a2.5 2.5 0 0 0 2.5-2.5v-2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            </svg>
+          </span>
+          <span>Resume</span>
+        </a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <canvas class="particle-canvas" id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="hero-3d" aria-hidden="true">
+        <span class="hero-shape hero-sphere"></span>
+        <span class="hero-shape hero-cube"></span>
+        <span class="hero-shape hero-ring"></span>
+        <span class="hero-shape hero-particles"></span>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <span class="eyebrow">Portfolio Showcase</span>
+          <h1>
+            <span class="hero-intro">Varshini Mithinti</span>
+            <span class="hero-name" data-name="Software Engineer | AI & SaaS Builder"></span>
+          </h1>
+          <p class="hero-roles">
+            <span id="typing-role" aria-live="polite"></span>
+          </p>
+          <p class="hero-summary">
+            Building AI-driven applications and scalable SaaS products focused on automation, efficiency, and real-world impact.
+          </p>
+          <span class="hero-status">Open to Software Engineering & AI/ML Roles</span>
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-resume" href="assets/Varshini_Mithinti_Resume.pdf" download="Varshini_Mithinti_Resume.pdf" title="Updated Resume">
+              <span class="btn-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" aria-hidden="true">
+                  <path d="M12 3v9m0 0 4-4m-4 4-4-4" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M5 15.5v2A2.5 2.5 0 0 0 7.5 20h9a2.5 2.5 0 0 0 2.5-2.5v-2" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" />
+                </svg>
+              </span>
+              <span class="btn-copy">
+                <span class="btn-label">Download Resume</span>
+                <span class="btn-meta">Updated Resume</span>
+              </span>
+            </a>
+            <a class="btn btn-secondary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          </div>
+          <div class="hero-pills" aria-label="Highlights">
+            <span>SaaS Products</span>
+            <span>LLM Apps</span>
+            <span>Computer Vision</span>
+            <span>DSA</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-card glass-card tilt-card">
+            <div class="profile-glow" aria-hidden="true"></div>
+            <div class="profile-photo-shell">
+              <div class="profile-photo">
+                <img src="profile.jpeg" alt="Portrait of Varshini" />
+              </div>
+            </div>
+            <div class="profile-meta">
+              <span class="status-dot">Open to opportunities</span>
+              <h2>Software Engineer<br />AI Builder</h2>
+              <p>Shipping clean interfaces, reliable APIs, and AI workflows that solve real product problems.</p>
+            </div>
+            <div class="profile-tags">
+              <span>React</span>
+              <span>Python</span>
+              <span>LLMs</span>
+            </div>
+            <div class="profile-stats">
+              <div>
+                <strong data-counter="12">0</strong>
+                <span>Projects shipped</span>
+              </div>
+              <div>
+                <strong data-counter="24">0</strong>
+                <span>Technologies</span>
+              </div>
+              <div>
+                <strong data-counter="3">0</strong>
+                <span>Internships</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="mini-stack">
+            <article class="mini-card glass-card tilt-card">
+              <span class="mini-label">Currently focused on</span>
+              <strong>AI-powered web products</strong>
+              <p>RAG pipelines, dashboards, and polished frontends.</p>
+            </article>
+            <article class="mini-card glass-card tilt-card">
+              <span class="mini-label">Signature style</span>
+              <strong>Fast, sharp, premium</strong>
+              <p>Dark glass layers, motion, and crisp hierarchy.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about">
+        <span></span>
+        Scroll
+      </a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">The Journey</span>
+          <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy glass-card reveal">
+            <p>
+              I am a <span class="accent">software engineer</span> who works at the intersection of product thinking and execution.
+              Across internships and independent builds, I have delivered <span class="accent">full-stack features</span>,
+              <span class="accent">AI workflows</span>, and <span class="accent">computer vision</span> tools that solve real operational problems.
+            </p>
+            <p>
+              I care about clean architecture, responsive interfaces, and systems that are simple for users and scalable for teams.
+              The best work I ship turns a manual process into something faster, clearer, and more reliable.
+            </p>
+          </div>
+
+          <div class="about-aside reveal">
+            <div class="stats-grid">
+              <article class="stat-card glass-card">
+                <strong data-counter="6">0</strong>
+                <span>Projects completed</span>
+              </article>
+              <article class="stat-card glass-card">
+                <strong data-counter="20">0</strong>
+                <span>Technologies known</span>
+              </article>
+              <article class="stat-card glass-card">
+                <strong data-counter="4">0</strong>
+                <span>Internship experiences</span>
+              </article>
+              <article class="stat-card glass-card">
+                <strong data-counter="100">0</strong>
+                <span>Commitment to quality</span>
+              </article>
+            </div>
+          </div>
+
+          <div class="portrait-card glass-card reveal tilt-card">
+            <div class="portrait-frame">
+              <div class="portrait-orbit"></div>
+              <div class="portrait-core">
+                <span>VA</span>
+              </div>
+            </div>
+            <div class="portrait-copy">
+              <h3>Profile Snapshot</h3>
+              <p>Product-focused software engineer building SaaS, AI, and full-stack experiences</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Technical Depth</span>
+          <h2>Skills & Expertise</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card glass-card reveal tilt-card">
+            <div class="skill-header">
+              <span class="skill-icon">⌘</span>
+              <div>
+                <h3>Programming Languages</h3>
+                <p>Foundations for clean, scalable, and maintainable systems.</p>
+              </div>
+            </div>
+            <div class="chip-row">
+              <span>Python</span>
+              <span>JavaScript</span>
+              <span>TypeScript</span>
+              <span>Java</span>
+              <span>C++</span>
+              <span>SQL</span>
+            </div>
+            <div class="skill-bars">
+              <div><label>Python</label><span><i style="width: 94%"></i></span></div>
+              <div><label>JavaScript</label><span><i style="width: 90%"></i></span></div>
+              <div><label>SQL</label><span><i style="width: 82%"></i></span></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card reveal tilt-card">
+            <div class="skill-header">
+              <span class="skill-icon">◌</span>
+              <div>
+                <h3>Tools & Technologies</h3>
+                <p>Reliable workflows for shipping and iterating quickly.</p>
+              </div>
+            </div>
+            <div class="chip-row">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+              <span>Git</span>
+              <span>Docker</span>
+              <span>Vercel</span>
+              <span>Streamlit</span>
+            </div>
+            <div class="skill-bars">
+              <div><label>Git / GitHub</label><span><i style="width: 92%"></i></span></div>
+              <div><label>React / Node.js</label><span><i style="width: 88%"></i></span></div>
+              <div><label>Deploy / Ship</label><span><i style="width: 80%"></i></span></div>
+            </div>
+          </article>
+
+          <article class="skill-card glass-card reveal tilt-card">
+            <div class="skill-header">
+              <span class="skill-icon">✦</span>
+              <div>
+                <h3>AI / ML & Data</h3>
+                <p>Turning models and data pipelines into practical product features.</p>
+              </div>
+            </div>
+            <div class="chip-row">
+              <span>LangChain</span>
+              <span>RAG</span>
+              <span>Gemini</span>
+              <span>Prompt Engineering</span>
+              <span>OpenCV</span>
+              <span>FAISS</span>
+              <span>Chroma</span>
+              <span>LLM Apps</span>
+            </div>
+            <div class="skill-bars">
+              <div><label>Prompt Engineering</label><span><i style="width: 88%"></i></span></div>
+              <div><label>RAG / Retrieval</label><span><i style="width: 84%"></i></span></div>
+              <div><label>Computer Vision</label><span><i style="width: 78%"></i></span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Portfolio Showcase</span>
+          <h2>Selected Projects</h2>
+        </div>
+
+        <p class="section-blurb reveal">Three projects that show product thinking, AI workflow design, and applied computer vision.</p>
+
+        <div class="project-grid">
+          <article class="project-card glass-card reveal tilt-card" data-category="web ai product">
+            <div class="project-topline">
+              <span class="project-tag accent-cyan">Primary</span>
+              <span class="project-tag accent-cyan">SaaS Billing</span>
+            </div>
+            <h3>InvoiceCloud SaaS Application</h3>
+            <div class="project-story">
+              <div class="project-block">
+                <span>Problem</span>
+                <p>Small businesses lose time creating invoices manually, chasing payments, and tracking billing status across spreadsheets or disconnected tools.</p>
+              </div>
+              <div class="project-block">
+                <span>Solution</span>
+                <p>Built InvoiceCloud, a SaaS invoicing platform with invoice creation, recurring billing workflows, payment tracking, and a clean dashboard for client accounts.</p>
+              </div>
+              <div class="project-block">
+                <span>Impact</span>
+                <p>Centralized billing operations and removed repetitive follow-up work so teams can manage invoices faster and with fewer manual steps.</p>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>MongoDB</span>
+              <span>JWT</span>
+              <span>Email Alerts</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-secondary" href="https://github.com/Varshashety" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn-primary" href="#contact">Discuss</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal tilt-card" data-category="ai tools">
+            <div class="project-topline">
+              <span class="project-tag accent-orange">CV</span>
+              <span class="project-tag accent-orange">Face Recognition</span>
+            </div>
+            <h3>Computer Vision Attendance System</h3>
+            <div class="project-story">
+              <div class="project-block">
+                <span>Problem</span>
+                <p>Manual attendance tracking is slow, repetitive, and prone to human error in classrooms, labs, and event environments.</p>
+              </div>
+              <div class="project-block">
+                <span>Solution</span>
+                <p>Built an automated attendance system using Python and computer vision to detect and identify individuals in real time through face recognition and dataset-based matching.</p>
+              </div>
+              <div class="project-block">
+                <span>Impact</span>
+                <p>Reduced the need for manual tracking and improved attendance accuracy with a lightweight workflow built around live recognition and data handling.</p>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span>Python</span>
+              <span>OpenCV</span>
+              <span>Face Recognition</span>
+              <span>Pandas</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-secondary" href="https://github.com/Varshashety/computer-vision-attendance-system" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn-primary" href="#contact">Discuss</a>
+            </div>
+          </article>
+
+          <article class="project-card glass-card reveal tilt-card" data-category="ai tools">
+            <div class="project-topline">
+              <span class="project-tag accent-cyan">GenAI</span>
+              <span class="project-tag accent-cyan">LLM Workflow</span>
+            </div>
+            <h3>Generative AI Project</h3>
+            <div class="project-story">
+              <div class="project-block">
+                <span>Problem</span>
+                <p>LLM-based applications need strong prompts and workflow design to generate useful output instead of vague, inconsistent responses.</p>
+              </div>
+              <div class="project-block">
+                <span>Solution</span>
+                <p>Developed a Generative AI project focused on prompt engineering, LLM workflows, and API-driven model interaction for intelligent text generation and automation.</p>
+              </div>
+              <div class="project-block">
+                <span>Impact</span>
+                <p>Showcased practical GenAI usage with structured prompting and reusable workflow patterns that translate well to real product features.</p>
+              </div>
+            </div>
+            <div class="tag-row">
+              <span>Python</span>
+              <span>LLMs</span>
+              <span>GenAI</span>
+              <span>OpenAI / APIs</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-secondary" href="https://github.com/Varshashety/GenAi-Assignment.git" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn btn-primary" href="#contact">Discuss</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Professional Path</span>
+          <h2>Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-badge">01</div>
+            <div class="timeline-card glass-card tilt-card">
+              <span class="timeline-date">May 2024 - Jun 2024</span>
+              <h3>Prompt Engineering Intern</h3>
+              <p class="timeline-org">Vault of Codes</p>
+              <p>Improved prompt quality across multiple use cases by refining structure, constraints, and response targets.</p>
+              <ul>
+                <li>Researched prompt engineering techniques to improve response accuracy, consistency, and task alignment.</li>
+                <li>Refined prompt templates for different workflows to reduce ambiguity and improve output quality.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-badge">02</div>
+            <div class="timeline-card glass-card tilt-card">
+              <span class="timeline-date">Nov 2024 - Dec 2024</span>
+              <h3>AI / ML Intern</h3>
+              <p class="timeline-org">Rinex AI</p>
+              <p>Combined machine learning concepts with prompt tuning to support real-time application behavior and better AI outputs.</p>
+              <ul>
+                <li>Researched how machine learning shapes modern applications and applied those ideas in practice.</li>
+                <li>Improved model responses for different use cases through prompt tuning and iteration.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-badge">03</div>
+            <div class="timeline-card glass-card tilt-card">
+              <span class="timeline-date">May 2025 - Jul 2025</span>
+              <h3>Frontend Intern</h3>
+              <p class="timeline-org">EISystems Pvt. Ltd.</p>
+              <p>Refined web applications so users could interact with them more easily while strengthening frontend delivery skills.</p>
+              <ul>
+                <li>Worked with React.js, HTML, CSS, and JavaScript to build and improve web interfaces.</li>
+                <li>Tested real-time applications and strengthened practical frontend understanding through hands-on work.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-badge">04</div>
+            <div class="timeline-card glass-card tilt-card">
+              <span class="timeline-date">Jan 2026 - Apr 2026</span>
+              <h3>Software Development Intern</h3>
+              <p class="timeline-org">Shnoor International LLC - Remote</p>
+              <p>Improved two full-stack web applications using React.js, Node.js/Express.js, and MongoDB with a focus on reliability and production-ready delivery.</p>
+              <ul>
+                <li>Enforced JWT authentication, API error handling, and input validation to reduce authentication bugs by 100%.</li>
+                <li>Built responsive UI components with CSS Flexbox and Bootstrap, achieving 95%+ CSS test coverage on 5+ components.</li>
+                <li>Integrated third-party payment and email APIs using Axios and AJAX, resolving 8 production integration bugs.</li>
+                <li>Participated in code reviews, Git workflows, and agile standups while shipping 2 features on schedule.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Recognition</span>
+          <h2>Achievements & Certifications</h2>
+        </div>
+
+        <div class="achievement-grid">
+          <article class="achievement-card glass-card reveal tilt-card">
+            <span class="badge">Delivery</span>
+            <h3>Production Feature Shipping</h3>
+            <p>Helped ship two full-stack features during the Shnoor internship with auth, validation, and integrations in place.</p>
+          </article>
+          <article class="achievement-card glass-card reveal tilt-card">
+            <span class="badge">AI</span>
+            <h3>Prompt and LLM Workflow Experience</h3>
+            <p>Applied prompt engineering and LLM workflows across Vault of Codes, Rinex AI, and a Generative AI project.</p>
+          </article>
+          <article class="achievement-card glass-card reveal tilt-card">
+            <span class="badge">CV</span>
+            <h3>Computer Vision Project Delivery</h3>
+            <p>Built a real-time face recognition attendance system using OpenCV, face matching, and dataset-based identification.</p>
+          </article>
+          <article class="achievement-card glass-card reveal tilt-card">
+            <span class="badge">DSA</span>
+            <h3>200+ LeetCode Problems Solved</h3>
+            <p>Maintains steady problem-solving practice across arrays, strings, graphs, trees, and dynamic programming.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="problem-solving">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">LeetCode / Problem Solving</span>
+          <h2>Problem Solving & DSA</h2>
+        </div>
+        <p class="section-blurb reveal">Consistent practice in Data Structures and Algorithms with a focus on patterns that show up in interviews and product debugging.</p>
+
+        <div class="leetcode-grid">
+          <article class="leetcode-card glass-card reveal tilt-card">
+            <div class="leetcode-topline">
+              <span class="leetcode-badge">LeetCode</span>
+              <a class="leetcode-profile-link" href="https://leetcode.com/u/Z1bnJOFAsI/" target="_blank" rel="noreferrer">
+                <span class="leetcode-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M10 4 4 12l6 8" />
+                    <path d="M8 12h12" />
+                    <path d="M16 7h2.5a2.5 2.5 0 0 1 0 5H15" />
+                  </svg>
+                </span>
+                View LeetCode Profile
+              </a>
+            </div>
+
+            <div class="leetcode-stats">
+              <div class="leetcode-stat">
+                <strong data-counter="200">0</strong>
+                <span>Problems solved</span>
+              </div>
+              <div class="leetcode-stat">
+                <strong data-counter="12">0</strong>
+                <span>Topics covered</span>
+              </div>
+              <div class="leetcode-stat">
+                <strong data-counter="42">0</strong>
+                <span>Practice streak</span>
+              </div>
+            </div>
+
+            <div class="leetcode-progress-grid">
+              <div class="leetcode-progress-card">
+                <div class="leetcode-progress-head">
+                  <span>Easy</span>
+                  <strong data-counter="185">0</strong>
+                </div>
+                <div class="leetcode-bar"><i style="width: 72%"></i></div>
+              </div>
+              <div class="leetcode-progress-card">
+                <div class="leetcode-progress-head">
+                  <span>Medium</span>
+                  <strong data-counter="96">0</strong>
+                </div>
+                <div class="leetcode-bar"><i style="width: 58%"></i></div>
+              </div>
+              <div class="leetcode-progress-card">
+                <div class="leetcode-progress-head">
+                  <span>Hard</span>
+                  <strong data-counter="19">0</strong>
+                </div>
+                <div class="leetcode-bar"><i style="width: 31%"></i></div>
+              </div>
+            </div>
+          </article>
+
+          <aside class="leetcode-aside reveal">
+            <div class="leetcode-ring-card glass-card tilt-card">
+              <div class="leetcode-ring" aria-hidden="true" style="--easy: 62; --medium: 28; --hard: 10;"></div>
+              <div class="leetcode-ring-copy">
+                <span class="mini-label">Balance</span>
+                <h3>Steady problem solving with a focus on fundamentals and pattern recognition.</h3>
+                <p>Arrays, strings, DP, graphs, trees, recursion, and hashing show up repeatedly in my practice routine.</p>
+              </div>
+            </div>
+
+            <div class="leetcode-topic-card glass-card tilt-card">
+              <div class="skill-header">
+                <span class="skill-icon">DSA</span>
+                <div>
+                  <h3>Topics Covered</h3>
+                  <p>Core patterns I revisit consistently.</p>
+                </div>
+              </div>
+              <div class="chip-row">
+                <span>Arrays</span>
+                <span>Strings</span>
+                <span>Linked Lists</span>
+                <span>Trees</span>
+                <span>Graphs</span>
+                <span>DP</span>
+                <span>Stacks</span>
+                <span>Queues</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="eyebrow">Let’s Build</span>
+          <h2>Contact Me</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-copy glass-card reveal">
+            <h3>Open to internships, collaborations, and product builds.</h3>
+            <p>
+              If you are looking for someone who can ship clean interfaces, design AI workflows, and keep the experience polished from start to finish, let’s talk.
+            </p>
+
+            <div class="contact-links">
+              <a class="contact-link" href="https://www.linkedin.com" target="_blank" rel="noreferrer">
+                <span class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4V8h4v2a4 4 0 0 1 2-2Z"/>
+                    <rect x="2" y="9" width="4" height="12" rx="1"/>
+                    <circle cx="4" cy="4" r="2"/>
+                  </svg>
+                </span>
+                LinkedIn
+              </a>
+              <a class="contact-link" href="https://github.com/Varshashety" target="_blank" rel="noreferrer">
+                <span class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-4.5 1.5-4.5-2-6-2"/>
+                    <path d="M15 22v-3.5c0-.9.3-1.6.8-2-2.6-.3-5.4-1.3-5.4-6a4.7 4.7 0 0 1 1.2-3.3 4.4 4.4 0 0 1 .1-3.2s1-.3 3.4 1.3a11.7 11.7 0 0 1 6.2 0C23.7 3.9 24.7 4.2 24.7 4.2a4.4 4.4 0 0 1 .1 3.2A4.7 4.7 0 0 1 26 10.7c0 4.7-2.8 5.7-5.4 6 .5.4.8 1.2.8 2V22"/>
+                    <path d="M9 19c0 1.2 0 3-3 3"/>
+                  </svg>
+                </span>
+                GitHub
+              </a>
+              <a class="contact-link" href="mailto:hello@varshini.ai">
+                <span class="icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 6h16v12H4z"/>
+                    <path d="m4 7 8 6 8-6"/>
+                  </svg>
+                </span>
+                Email
+              </a>
+            </div>
+          </div>
+
+          <form class="contact-form glass-card reveal" novalidate>
+            <div class="field-row">
+              <label>
+                <span>Your name</span>
+                <input type="text" name="name" placeholder="Your Name" autocomplete="name" />
+              </label>
+              <label>
+                <span>Email address</span>
+                <input type="email" name="email" placeholder="you@example.com" autocomplete="email" />
+              </label>
+            </div>
+            <label>
+              <span>Subject</span>
+              <input type="text" name="subject" placeholder="Project, internship, collaboration..." />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" rows="6" placeholder="Tell me a bit about the idea, timeline, and what success looks like."></textarea>
+            </label>
+            <div class="form-footer">
+              <p class="form-status" aria-live="polite"></p>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-shell">
+      <div>
+        <strong>VARSHINI.AI</strong>
+        <p>© 2026 Built with motion, clarity, and a premium dark UI.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
